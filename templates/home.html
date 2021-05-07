@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}HOME{% endblock title %}
+
+{% block body %}
+    <div class="container-fluid _bg-home">
+        <div class="row padding-5">
+            <div class="col-sm-8 ">
+                <div class="container text-center welcome_txt py-5">
+                    <div class="text-capitalize my-5">
+                        <h5 class="text-start px-5" style="font-size: xx-large;">Welcome to xyz</h5>
+                        <hr class="mx-5" style="width: 15%;">
+                        <p class="home-para">"Get Quality Work Through Sheer Dedication"</p>
+                    </div>
+                    <div class="text-start mt-5">
+                        <h4 class="text-capitalize mb-5 px-5" style="font-size: xx-large;">Sample</h4>
+                        <p class="mb-5 px-5">Download samples of our work here. you can also request for more samples by filling up the form in
+                            our contact us page.
+                        </p>
+                        <div class="my-3 text-start px-5">
+                            <button type="button" class="btn btn-danger text-capitalize">download sample</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 bg-opacity">
+                <div class="container">
+                    <div class="my-4 text-center text-capitalize">
+                        <h2 class="my-3 "><i class="fa fa-gbp" style="font-size:36px"></i> pricing <i class="fa fa-gbp" style="font-size:36px"></i></h2>
+                        <p class="" style="font-size: x-large;">just select correct options & calculate best price.</p>
+                    </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group text-capitalize">
+                            <label for="academic" class="_label my-2">please select academic level</label><br>
+                            <select class="form-control custom-select custom-select-lg mb-1" id="academic">
+                                <option selected value="1">please select academic level</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-capitalize">
+                            <label for="academic" class="_label my-2">please select domain</label><br>
+                            <select class="form-control custom-select custom-select-lg mb-1" id="domain">
+                                <option selected value="1">please select domain</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-capitalize">
+                            <label for="academic" class="_label my-2">please select desired services</label><br>
+                            <select class="form-control custom-select custom-select-lg mb-1" id="des_services">
+                                <option selected value="1">please select desired services</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-capitalize">
+                            <label for="academic" class="_label my-2">please select tool</label><br>
+                            <select class="form-control custom-select custom-select-lg mb-1" id="tools">
+                                <option selected value="1">please select tool</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-capitalize">
+                            <label for="academic" class="_label my-2">please select no. of words/pages</label><br>
+                            <select class="custom-select custom-select-lg mb-1 form-control" id="words">
+                                <option selected value="1">select no. of words/pages</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-capitalize">
+                          <label for="exampleInputEmail1" class="_label my-2">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted text-uppercase">Sorry, Field cann't be empty.</small>
+                        </div>
+                        <div class="form-group text-capitalize">
+                          <label for="exampleInputPhone1"  class="_label my-2">valid mobile number/whatsapp</label>
+                          <input type="phone" class="form-control" id="exampleInputPhone1">
+                        </div>
+                        <div class="form-group text-capitalize">
+                            <label for="exampleDate" class="_label my-2">Date of submission</label>
+                            <input type="date" class="form-control text-capitalize" id="exampleDate">
+                        </div>
+                        <div class="text-center my-3">
+                            <button type="button" class="btn _btn-calc">calculate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
